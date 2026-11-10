@@ -14,8 +14,8 @@ Se publica una lección nueva cada dos días. La guía de uso del repositorio, l
 
 ## Estado de las lecciones
 
-- **Listas:** lecciones 01, 02 y 03.
-- **En preparación:** lecciones 04 a 14.
+- **Listas:** lecciones 01, 02, 03 y 04.
+- **En preparación:** lecciones 05 a 14.
 
 ## Bloque 1. Primeros pasos en la terminal
 
@@ -43,7 +43,7 @@ Al terminar, el alumno sabrá organizar sus archivos desde la terminal y crear l
 
 Requisito previo: lecciones 01 a 03.
 
-### 04. Permisos — En preparación
+### 04. Permisos — Lista
 
 Leer los permisos de un archivo, cambiarlos con `chmod`, cambiar el propietario con `chown` y entender qué es `umask`.
 

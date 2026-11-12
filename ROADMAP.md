@@ -14,8 +14,8 @@ Se publica una lección nueva cada dos días. La guía de uso del repositorio, l
 
 ## Estado de las lecciones
 
-- **Listas:** lecciones 01, 02, 03 y 04.
-- **En preparación:** lecciones 05 a 14.
+- **Listas:** lecciones 01, 02, 03, 04 y 05.
+- **En preparación:** lecciones 06 a 14.
 
 ## Bloque 1. Primeros pasos en la terminal
 
@@ -49,7 +49,7 @@ Leer los permisos de un archivo, cambiarlos con `chmod`, cambiar el propietario 
 
 Al terminar, el alumno sabrá leer los permisos de un archivo, dar o quitar permiso de lectura, escritura y ejecución, y entender por qué un script necesita permiso de ejecución para correrse como `./script.sh`.
 
-### 05. Buscar y filtrar — En preparación
+### 05. Buscar y filtrar — Lista
 
 Buscar texto dentro de archivos con `grep`, buscar archivos con `find`, encadenar comandos con pipes (`|`) y ordenar, contar y resumir resultados con `sort`, `uniq` y `wc`.
 

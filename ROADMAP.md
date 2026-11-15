@@ -14,8 +14,8 @@ Se publica una lección nueva cada dos días. La guía de uso del repositorio, l
 
 ## Estado de las lecciones
 
-- **Listas:** lecciones 01, 02, 03, 04 y 05.
-- **En preparación:** lecciones 06 a 14.
+- **Listas:** lecciones 01, 02, 03, 04, 05 y 06.
+- **En preparación:** lecciones 07 a 14.
 
 ## Bloque 1. Primeros pasos en la terminal
 
@@ -55,7 +55,7 @@ Buscar texto dentro de archivos con `grep`, buscar archivos con `find`, encadena
 
 Al terminar, el alumno sabrá buscar una palabra dentro de varios archivos, localizar archivos por nombre o por fecha y combinar comandos para filtrar y contar resultados.
 
-### 06. Redirecciones y archivos de registro — En preparación
+### 06. Redirecciones y archivos de registro — Lista
 
 Guardar la salida de un comando en un archivo con `>` y `>>`, separar la salida normal de los errores con `2>`, y ver la salida en pantalla y guardarla a la vez con `tee`.
 

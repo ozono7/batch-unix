@@ -119,7 +119,7 @@ Comprueba que los archivos están en su lugar:
 ls datos
 ```
 
-Salida real:
+Salida:
 
 ```text
 lecturas.txt
@@ -136,7 +136,7 @@ El contenido de los archivos nuevos es este:
 cat datos/registro.txt
 ```
 
-Salida real:
+Salida:
 
 ```text
 2026-11-10 08:00 inicio del cultivo control
@@ -153,7 +153,7 @@ Salida real:
 cat datos/tratamientos.txt
 ```
 
-Salida real:
+Salida:
 
 ```text
 control
@@ -170,7 +170,7 @@ control
 cat resultados/resumen.txt
 ```
 
-Salida real:
+Salida:
 
 ```text
 Resumen del experimento con Chlorella vulgaris.
@@ -215,7 +215,7 @@ muestras:
 grep "luz_azul" datos/muestras.txt
 ```
 
-Salida real:
+Salida:
 
 ```text
 M02 luz_azul 0.68
@@ -242,7 +242,7 @@ inicial, pero la búsqueda con minúsculas la encuentra igual:
 grep -i "chlorella" datos/notas.txt
 ```
 
-Salida real:
+Salida:
 
 ```text
 Experimento con Chlorella vulgaris.
@@ -262,7 +262,7 @@ Busca la frase `luz azul` en las notas:
 grep "luz azul" datos/notas.txt
 ```
 
-Salida real:
+Salida:
 
 ```text
 Tratamientos: control, luz azul y luz roja.
@@ -278,7 +278,7 @@ las líneas que mencionan `luz`:
 grep -n "luz" datos/muestras.txt
 ```
 
-Salida real:
+Salida:
 
 ```text
 3:M02 luz_azul 0.68
@@ -302,7 +302,7 @@ control:
 grep -c "control" datos/muestras.txt
 ```
 
-Salida real:
+Salida:
 
 ```text
 2
@@ -322,7 +322,7 @@ control:
 grep -v "control" datos/muestras.txt
 ```
 
-Salida real:
+Salida:
 
 ```text
 muestra tratamiento OD680
@@ -344,7 +344,7 @@ completa, no como parte de otra palabra. Busca la muestra M01:
 grep -w "M01" datos/muestras.txt
 ```
 
-Salida real:
+Salida:
 
 ```text
 M01 control 0.42
@@ -357,7 +357,7 @@ porque las cinco empiezan por `M0`:
 grep "M0" datos/muestras.txt
 ```
 
-Salida real:
+Salida:
 
 ```text
 M01 control 0.42
@@ -377,7 +377,7 @@ línea: `^` significa "al principio de la línea" y `$` significa
 grep "^M01" datos/muestras.txt
 ```
 
-Salida real:
+Salida:
 
 ```text
 M01 control 0.42
@@ -389,7 +389,7 @@ Y busca la línea que termina con `0.42`:
 grep "0.42$" datos/muestras.txt
 ```
 
-Salida real:
+Salida:
 
 ```text
 M01 control 0.42
@@ -411,7 +411,7 @@ significa "o". Busca las muestras con luz azul o con luz roja:
 grep -E "luz_azul|luz_roja" datos/muestras.txt
 ```
 
-Salida real:
+Salida:
 
 ```text
 M02 luz_azul 0.68
@@ -440,7 +440,7 @@ palabra `control` en las muestras y en las notas:
 grep "control" datos/muestras.txt datos/notas.txt
 ```
 
-Salida real:
+Salida:
 
 ```text
 datos/muestras.txt:M01 control 0.42
@@ -469,7 +469,7 @@ respaldo:
 grep -r "luz_azul" datos
 ```
 
-Salida real:
+Salida:
 
 ```text
 datos/muestras.txt:M02 luz_azul 0.68
@@ -498,7 +498,7 @@ una carpeta y se muestra el número de línea de cada coincidencia:
 grep -rn "luz_roja" datos
 ```
 
-Salida real:
+Salida:
 
 ```text
 datos/muestras.txt:4:M03 luz_roja 0.71
@@ -521,7 +521,7 @@ aparece `OD680`:
 grep -l "OD680" datos/*.txt
 ```
 
-Salida real:
+Salida:
 
 ```text
 datos/lecturas.txt
@@ -544,7 +544,7 @@ sin `-l`:
 grep -r "OD680" datos
 ```
 
-Salida real:
+Salida:
 
 ```text
 datos/muestras.txt:muestra tratamiento OD680
@@ -572,7 +572,7 @@ en la lección 04. Busca una palabra que no está en el archivo:
 grep "Scenedesmus" datos/muestras.txt; echo $?
 ```
 
-Salida real:
+Salida:
 
 ```text
 1
@@ -586,7 +586,7 @@ búsqueda que sí encuentra algo termina con código `0`:
 grep "OD680" datos/muestras.txt; echo $?
 ```
 
-Salida real:
+Salida:
 
 ```text
 muestra tratamiento OD680
@@ -616,7 +616,7 @@ Lista todos los archivos de texto de la carpeta `datos`:
 find datos -name "*.txt"
 ```
 
-Salida real:
+Salida:
 
 ```text
 datos/muestras.txt
@@ -641,7 +641,7 @@ toda la carpeta de práctica:
 find . -name "*.sh"
 ```
 
-Salida real:
+Salida:
 
 ```text
 ./scripts/analisis.sh
@@ -661,7 +661,7 @@ Lista las carpetas de la práctica:
 find . -type d
 ```
 
-Salida real:
+Salida:
 
 ```text
 .
@@ -679,7 +679,7 @@ el resultado con `wc -l`, como se explica en las secciones 4 y 7:
 find datos -type f -name "*.txt" | wc -l
 ```
 
-Salida real:
+Salida:
 
 ```text
 6
@@ -698,7 +698,7 @@ Lista los archivos de `datos` que pesan más de 100 bytes:
 find datos -type f -size +100c
 ```
 
-Salida real:
+Salida:
 
 ```text
 datos/muestras.txt
@@ -725,7 +725,7 @@ Lista los archivos de texto de `datos` modificados hoy:
 find datos -mtime -1 -name "*.txt"
 ```
 
-Salida real:
+Salida:
 
 ```text
 datos/muestras.txt
@@ -756,7 +756,7 @@ con `\;`. Busca en qué archivos de texto de `datos` aparece
 find datos -name "*.txt" -exec grep -l "OD680" {} \;
 ```
 
-Salida real:
+Salida:
 
 ```text
 datos/muestras.txt
@@ -792,7 +792,7 @@ Cuenta las líneas de `muestras.txt`:
 wc -l datos/muestras.txt
 ```
 
-Salida real:
+Salida:
 
 ```text
 6 datos/muestras.txt
@@ -805,7 +805,7 @@ archivos, `wc` cuenta cada uno y añade una línea con el total:
 wc -l datos/muestras.txt datos/lecturas.txt
 ```
 
-Salida real:
+Salida:
 
 ```text
   6 datos/muestras.txt
@@ -822,7 +822,7 @@ espacios. Cuenta las palabras de las notas:
 wc -w datos/notas.txt
 ```
 
-Salida real:
+Salida:
 
 ```text
 20 datos/notas.txt
@@ -835,7 +835,7 @@ bytes del archivo. Cuenta los bytes de `muestras.txt`:
 wc -c datos/muestras.txt
 ```
 
-Salida real:
+Salida:
 
 ```text
 114 datos/muestras.txt
@@ -853,7 +853,7 @@ palabras y bytes, en ese orden:
 wc datos/muestras.txt
 ```
 
-Salida real:
+Salida:
 
 ```text
   6  18 114 datos/muestras.txt
@@ -872,7 +872,7 @@ de texto de `datos` y muestra el total:
 wc -l datos/*.txt
 ```
 
-Salida real:
+Salida:
 
 ```text
  11 datos/lecturas.txt
@@ -907,7 +907,7 @@ Ordena la lista de tratamientos:
 sort datos/tratamientos.txt
 ```
 
-Salida real:
+Salida:
 
 ```text
 control
@@ -933,7 +933,7 @@ repetidas en un solo paso:
 sort -u datos/tratamientos.txt
 ```
 
-Salida real:
+Salida:
 
 ```text
 control
@@ -948,7 +948,7 @@ menor, o de la Z a la A:
 sort -r datos/tratamientos.txt
 ```
 
-Salida real:
+Salida:
 
 ```text
 luz_roja
@@ -979,7 +979,7 @@ encabezado:
 LC_ALL=C sort datos/muestras.txt
 ```
 
-Salida real:
+Salida:
 
 ```text
 M01 control 0.42
@@ -1011,7 +1011,7 @@ menor a mayor:
 LC_ALL=C sort -k3 -n datos/muestras.txt
 ```
 
-Salida real:
+Salida:
 
 ```text
 muestra tratamiento OD680
@@ -1037,7 +1037,7 @@ lección 03, se obtienen las tres muestras con mayor OD680:
 LC_ALL=C sort -k3 -nr datos/muestras.txt | head -3
 ```
 
-Salida real:
+Salida:
 
 ```text
 M03 luz_roja 0.71
@@ -1056,7 +1056,7 @@ lecturas por su OD680:
 LC_ALL=C sort -k3 -n datos/lecturas.txt
 ```
 
-Salida real:
+Salida:
 
 ```text
 lectura hora OD680
@@ -1099,7 +1099,7 @@ la sección 7. Muestra cada tratamiento una sola vez:
 sort datos/tratamientos.txt | uniq
 ```
 
-Salida real:
+Salida:
 
 ```text
 control
@@ -1120,7 +1120,7 @@ cada tratamiento:
 sort datos/tratamientos.txt | uniq -c
 ```
 
-Salida real:
+Salida:
 
 ```text
       3 control
@@ -1145,7 +1145,7 @@ que se repitieron:
 sort datos/tratamientos.txt | uniq -d
 ```
 
-Salida real:
+Salida:
 
 ```text
 control
@@ -1167,7 +1167,7 @@ están seguidas, así que `uniq` no quita ninguna:
 uniq datos/tratamientos.txt
 ```
 
-Salida real:
+Salida:
 
 ```text
 control
@@ -1195,7 +1195,7 @@ tratamientos de mayor a menor:
 sort datos/tratamientos.txt | uniq -c | sort -nr
 ```
 
-Salida real:
+Salida:
 
 ```text
       3 luz_azul
@@ -1227,7 +1227,7 @@ líneas con `luz` y contándolas con `wc -l`:
 grep "luz" datos/muestras.txt | wc -l
 ```
 
-Salida real:
+Salida:
 
 ```text
 3
@@ -1244,7 +1244,7 @@ Cuenta cuántas mediciones se registraron en el día:
 grep "medicion" datos/registro.txt | wc -l
 ```
 
-Salida real:
+Salida:
 
 ```text
 4
@@ -1268,7 +1268,7 @@ seguidas de letras minúsculas. Encadenado con `sort` y
 grep -o "luz_[a-z]*" datos/registro.txt | sort | uniq -c
 ```
 
-Salida real:
+Salida:
 
 ```text
       3 luz_azul
@@ -1291,7 +1291,7 @@ sección 0. Para ver la lista ordenada, se encadena con `sort`:
 find datos -name "*.txt" | sort
 ```
 
-Salida real:
+Salida:
 
 ```text
 datos/lecturas.txt
@@ -1312,7 +1312,7 @@ líneas:
 wc -l datos/*.txt | sort -n
 ```
 
-Salida real:
+Salida:
 
 ```text
   3 datos/notas.txt
@@ -1354,7 +1354,7 @@ se puede ejecutar dos veces seguidas: vuelve a generar sus
 archivos de ejemplo sin borrar el trabajo que tú hayas guardado
 dentro de `practica-batch`.
 
-Salida real de `bash buscar-filtrar.sh`:
+Salida de `bash buscar-filtrar.sh`:
 
 ```text
 Muestras con luz_azul:

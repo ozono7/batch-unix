@@ -50,7 +50,7 @@ cd ~/practica-batch
 umask
 ```
 
-Salida real:
+Salida:
 
 ```text
 0022
@@ -79,7 +79,7 @@ modificación. Míralo con el archivo de muestras de la lección 03:
 ls -l datos/muestras.txt
 ```
 
-Salida real:
+Salida:
 
 ```text
 -rw-r--r-- 1 root root 114 Nov 10 15:49 datos/muestras.txt
@@ -116,7 +116,7 @@ contenido:
 ls -ld datos
 ```
 
-Salida real:
+Salida:
 
 ```text
 drwxr-xr-x 2 root root 120 Nov 10 15:49 datos
@@ -133,7 +133,7 @@ Para ver los permisos de todos los archivos de una carpeta:
 ls -l datos/
 ```
 
-Salida real:
+Salida:
 
 ```text
 total 12
@@ -175,7 +175,7 @@ y todavía tienes permiso de lectura. Pero entrar ya no se puede:
 cd carpeta-prueba
 ```
 
-Salida real:
+Salida:
 
 ```text
 bash: cd: carpeta-prueba: Permission denied
@@ -226,7 +226,7 @@ Primero mira los permisos actuales de `muestras.txt`:
 ls -l datos/muestras.txt
 ```
 
-Salida real:
+Salida:
 
 ```text
 -rw-r--r-- 1 root root 114 Nov 10 15:49 datos/muestras.txt
@@ -242,7 +242,7 @@ chmod g+w datos/muestras.txt
 ls -l datos/muestras.txt
 ```
 
-Salida real:
+Salida:
 
 ```text
 -rw-rw-r-- 1 root root 114 Nov 10 15:49 datos/muestras.txt
@@ -256,7 +256,7 @@ chmod g-w datos/muestras.txt
 ls -l datos/muestras.txt
 ```
 
-Salida real:
+Salida:
 
 ```text
 -rw-r--r-- 1 root root 114 Nov 10 15:49 datos/muestras.txt
@@ -274,7 +274,7 @@ chmod o-r datos/notas.txt
 ls -l datos/notas.txt
 ```
 
-Salida real:
+Salida:
 
 ```text
 -rw-r----- 1 root root 126 Nov 10 15:49 notas.txt
@@ -288,7 +288,7 @@ chmod o+r datos/notas.txt
 ls -l datos/notas.txt
 ```
 
-Salida real:
+Salida:
 
 ```text
 -rw-r--r-- 1 root root 126 Nov 10 15:49 notas.txt
@@ -304,7 +304,7 @@ chmod u-x scripts/analisis.sh
 ls -l scripts/analisis.sh
 ```
 
-Salida real:
+Salida:
 
 ```text
 -rw-r-xr-x 1 root root 119 Nov 10 15:49 scripts/analisis.sh
@@ -318,7 +318,7 @@ chmod u+x scripts/analisis.sh
 ls -l scripts/analisis.sh
 ```
 
-Salida real:
+Salida:
 
 ```text
 -rwxr-xr-x 1 root root 119 Nov 10 15:49 scripts/analisis.sh
@@ -332,7 +332,7 @@ chmod a-x scripts/analisis.sh
 ls -l scripts/analisis.sh
 ```
 
-Salida real:
+Salida:
 
 ```text
 -rw-r--r-- 1 root root 119 Nov 10 15:49 scripts/analisis.sh
@@ -346,7 +346,7 @@ chmod u+x scripts/analisis.sh
 ls -l scripts/analisis.sh
 ```
 
-Salida real:
+Salida:
 
 ```text
 -rwxr-xr-x 1 root root 119 Nov 10 15:49 scripts/analisis.sh
@@ -364,7 +364,7 @@ chmod u=rw,g=r,o= datos/muestras.txt
 ls -l datos/muestras.txt
 ```
 
-Salida real:
+Salida:
 
 ```text
 -rw-r----- 1 root root 114 Nov 10 15:53 datos/muestras.txt
@@ -377,7 +377,7 @@ chmod u=rw,g=r,o=r datos/muestras.txt
 ls -l datos/muestras.txt
 ```
 
-Salida real:
+Salida:
 
 ```text
 -rw-r--r-- 1 root root 114 Nov 10 15:53 datos/muestras.txt
@@ -393,7 +393,7 @@ chmod u=rwx,go=rx scripts
 ls -ld scripts
 ```
 
-Salida real:
+Salida:
 
 ```text
 drwxr-xr-x 2 root root 40 Nov 10 15:53 scripts
@@ -431,7 +431,7 @@ chmod 600 notas-privadas.txt
 ls -l notas-privadas.txt
 ```
 
-Salida real:
+Salida:
 
 ```text
 -rw------- 1 root root 0 Nov 10 15:49 notas-privadas.txt
@@ -447,7 +447,7 @@ chmod 640 datos/notas.txt
 ls -l datos/notas.txt
 ```
 
-Salida real:
+Salida:
 
 ```text
 -rw-r----- 1 root root 126 Nov 10 15:49 datos/notas.txt
@@ -469,7 +469,7 @@ chmod 700 scripts
 ls -ld scripts
 ```
 
-Salida real:
+Salida:
 
 ```text
 drwx------ 2 root root 60 Nov 10 15:49 scripts
@@ -482,7 +482,7 @@ chmod 755 scripts
 ls -ld scripts
 ```
 
-Salida real:
+Salida:
 
 ```text
 drwxr-xr-x 2 root root 60 Nov 10 15:49 scripts
@@ -499,7 +499,7 @@ stat -c %a datos/muestras.txt
 stat -c %a scripts
 ```
 
-Salida real:
+Salida:
 
 ```text
 644
@@ -523,7 +523,7 @@ ls -ld carpeta-r
 ls -l carpeta-r
 ```
 
-Salida real:
+Salida:
 
 ```text
 drwx------ 3 root root 100 Nov 10 15:53 carpeta-r
@@ -566,7 +566,7 @@ EOF
 ls -l scripts/analisis.sh
 ```
 
-Salida real:
+Salida:
 
 ```text
 -rw-r--r-- 1 root root 119 Nov 10 15:49 scripts/analisis.sh
@@ -579,7 +579,7 @@ ejecución. Intenta correrlo directamente:
 ./scripts/analisis.sh
 ```
 
-Salida real:
+Salida:
 
 ```text
 bash: ./scripts/analisis.sh: Permission denied
@@ -593,7 +593,7 @@ el archivo existe pero no se puede ejecutar. Compruébalo:
 echo $?
 ```
 
-Salida real:
+Salida:
 
 ```text
 126
@@ -612,7 +612,7 @@ ls -l scripts/analisis.sh
 ./scripts/analisis.sh
 ```
 
-Salida real:
+Salida:
 
 ```text
 -rwxr-xr-x 1 root root 119 Nov 10 15:49 scripts/analisis.sh
@@ -631,7 +631,7 @@ ejecución: pasárselo a `bash`, como se explicó en el README:
 bash scripts/analisis.sh
 ```
 
-Salida real:
+Salida:
 
 ```text
 Lineas en muestras.txt:
@@ -657,7 +657,7 @@ ls -l datos/muestras.txt
 cat datos/muestras.txt
 ```
 
-Salida real:
+Salida:
 
 ```text
 ---------- 1 root root 114 Nov 10 15:49 datos/muestras.txt
@@ -673,7 +673,7 @@ chmod 644 datos/muestras.txt
 cat datos/muestras.txt
 ```
 
-Salida real:
+Salida:
 
 ```text
 muestra tratamiento OD680
@@ -710,7 +710,7 @@ Para saber a qué grupo perteneces, usa `id -gn`:
 id -gn
 ```
 
-Salida real:
+Salida:
 
 ```text
 root
@@ -725,7 +725,7 @@ chgrp "$(id -gn)" datos/muestras.txt
 ls -l datos/muestras.txt
 ```
 
-Salida real:
+Salida:
 
 ```text
 -rw-r--r-- 1 root root 114 Nov 10 15:49 datos/muestras.txt
@@ -740,7 +740,7 @@ perteneces se rechaza:
 chgrp root datos/muestras.txt
 ```
 
-Salida real (para un usuario que no pertenece al grupo `root`):
+Salida (para un usuario que no pertenece al grupo `root`):
 
 ```text
 chgrp: changing group of 'datos/muestras.txt': Operation not permitted
@@ -764,7 +764,7 @@ sistema se niega:
 chown otro-usuario datos/muestras.txt
 ```
 
-Salida real:
+Salida:
 
 ```text
 chown: changing ownership of 'datos/muestras.txt': Operation not permitted
@@ -806,7 +806,7 @@ Compruébalo. Primero mira tu `umask`:
 umask
 ```
 
-Salida real:
+Salida:
 
 ```text
 0022
@@ -821,7 +821,7 @@ mkdir carpeta-umask-022
 ls -ld carpeta-umask-022
 ```
 
-Salida real:
+Salida:
 
 ```text
 -rw-r--r-- 1 root root 0 Nov 10 15:49 archivo-umask-022.txt
@@ -840,7 +840,7 @@ mkdir carpeta-umask-077
 ls -ld carpeta-umask-077
 ```
 
-Salida real:
+Salida:
 
 ```text
 -rw------- 1 root root 0 Nov 10 15:49 archivo-umask-077.txt
@@ -896,7 +896,7 @@ se puede ejecutar dos veces seguidas: vuelve a generar sus
 archivos de ejemplo sin borrar el trabajo que tú hayas guardado
 dentro de `practica-batch`.
 
-Salida real de `bash practica-permisos.sh`:
+Salida de `bash practica-permisos.sh`:
 
 ```text
 Permisos de analisis.sh al crearlo:

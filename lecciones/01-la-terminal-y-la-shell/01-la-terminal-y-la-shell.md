@@ -16,7 +16,7 @@ pedir ayuda cuando no recuerdes cómo se usa un comando.
 
 Todos los comandos de esta lección se ejecutaron y se verificaron en una
 computadora con bash 5.2 antes de escribirlos aquí. Las salidas que se muestran
-son salidas reales de esa sesión. Donde la salida depende de la computadora
+son salidas de esa sesión. Donde la salida depende de la computadora
 (nombre de usuario, nombre de la computadora, fecha y hora, carpeta), en tu
 computadora verás tus propios datos en lugar de los que se muestran aquí.
 
@@ -81,7 +81,7 @@ echo $SHELL
 ```
 
 `$SHELL` es una **variable**: un nombre que guarda un valor. En este caso
-guarda la ruta del programa de tu shell. La salida real en la sesión de
+guarda la ruta del programa de tu shell. La salida en la sesión de
 verificación de esta lección fue:
 
 ```text
@@ -97,7 +97,7 @@ Para saber la versión de bash, escribe:
 echo $BASH_VERSION
 ```
 
-La salida real fue:
+La salida fue:
 
 ```text
 5.2.21(1)-release
@@ -109,7 +109,7 @@ Y para saber la versión de zsh, escribe:
 zsh --version
 ```
 
-La salida real en la sesión de verificación fue:
+La salida en la sesión de verificación fue:
 
 ```text
 zsh 5.9 (x86_64-ubuntu-linux-gnu)
@@ -162,7 +162,7 @@ Cada parte significa algo:
 - **$**: el símbolo que marca el final del prompt en bash. En zsh el símbolo
   es **`%`** en lugar de `$`.
 
-Con los datos reales de la sesión de verificación de esta lección (usuario
+Con los datos de la sesión de verificación de esta lección (usuario
 `root`, computadora `htch-runtime`, carpeta
 `/tmp/batch-unix-scratch/leccion01`), el prompt se vería así:
 
@@ -196,7 +196,7 @@ El comando `echo` muestra en la pantalla el texto que escribas después de él.
 echo "Hola, soy estudiante de Ciencias Químicas"
 ```
 
-Salida real:
+Salida:
 
 ```text
 Hola, soy estudiante de Ciencias Químicas
@@ -209,7 +209,7 @@ también con un saludo corto:
 echo "Hola, mundo"
 ```
 
-Salida real:
+Salida:
 
 ```text
 Hola, mundo
@@ -223,7 +223,7 @@ El comando `date` muestra la fecha y la hora actuales del sistema.
 date
 ```
 
-Salida real:
+Salida:
 
 ```text
 Tue Nov 10 05:27:57 UTC 2026
@@ -249,7 +249,7 @@ soy yo?".
 whoami
 ```
 
-Salida real en la sesión de verificación:
+Salida en la sesión de verificación:
 
 ```text
 root
@@ -270,7 +270,7 @@ directory", que significa "muestra la carpeta de trabajo".
 pwd
 ```
 
-Salida real en la sesión de verificación:
+Salida en la sesión de verificación:
 
 ```text
 /tmp/batch-unix-scratch/leccion01
@@ -315,7 +315,7 @@ ls --help
 ```
 
 `ls` es el comando que lista (muestra) los archivos de una carpeta. Su ayuda
-empieza así (fragmento real de la salida; la salida completa tiene 139 líneas):
+empieza así (fragmento de la salida; la salida completa tiene 139 líneas):
 
 ```text
 Usage: ls [OPTION]... [FILE]...
@@ -350,7 +350,7 @@ Otro ejemplo, con el comando `cp`, que copia archivos:
 cp --help
 ```
 
-Fragmento real de la salida (la salida completa tiene 94 líneas):
+Fragmento de la salida (la salida completa tiene 94 líneas):
 
 ```text
 Usage: cp [OPTION]... [-T] SOURCE DEST
@@ -388,7 +388,7 @@ interno, se usa `type`:
 type echo pwd cd ls
 ```
 
-Salida real:
+Salida:
 
 ```text
 echo is a shell builtin
@@ -408,7 +408,7 @@ del comando:
 help echo
 ```
 
-Salida real completa:
+Salida completa:
 
 ```text
 echo: echo [-neE] [arg ...]
@@ -448,7 +448,7 @@ echo: echo [-neE] [arg ...]
 ```
 
 Si escribes `help` sin ningún nombre, bash muestra la lista de todos sus
-comandos internos. La salida real empieza así (fragmento real):
+comandos internos. La salida empieza así (fragmento):
 
 ```text
 GNU bash, version 5.2.21(1)-release (x86_64-pc-linux-gnu)

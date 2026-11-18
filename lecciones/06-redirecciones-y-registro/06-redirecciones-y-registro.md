@@ -93,7 +93,7 @@ Comprueba que los archivos están en su lugar:
 ls datos
 ```
 
-Salida real:
+Salida:
 
 ```text
 lecturas.txt
@@ -148,7 +148,7 @@ al archivo. Para ver lo que se guardó, se lee el archivo con
 cat resultados/luz-azul.txt
 ```
 
-Salida real:
+Salida:
 
 ```text
 M02 luz_azul 0.68
@@ -178,7 +178,7 @@ Comprueba que el archivo se creó y que pesa 0 bytes:
 wc -c resultados/vacio.txt
 ```
 
-Salida real:
+Salida:
 
 ```text
 0 resultados/vacio.txt
@@ -210,7 +210,7 @@ Comprueba cuántas líneas quedan en la copia:
 wc -l datos/notas-copia.txt
 ```
 
-Salida real:
+Salida:
 
 ```text
 0 datos/notas-copia.txt
@@ -258,7 +258,7 @@ Lee el archivo para ver lo que contiene ahora:
 cat resultados/luz-azul.txt
 ```
 
-Salida real:
+Salida:
 
 ```text
 M02 luz_azul 0.68
@@ -288,7 +288,7 @@ Lee el archivo completo:
 cat resultados/luz-azul.txt
 ```
 
-Salida real:
+Salida:
 
 ```text
 M02 luz_azul 0.68
@@ -319,7 +319,7 @@ Lista un archivo que no existe:
 ls datos/archivo-inexistente.txt
 ```
 
-Salida real:
+Salida:
 
 ```text
 ls: cannot access 'datos/archivo-inexistente.txt': No such file or directory
@@ -334,7 +334,7 @@ Compruébalo:
 ls datos/archivo-inexistente.txt; echo $?
 ```
 
-Salida real:
+Salida:
 
 ```text
 ls: cannot access 'datos/archivo-inexistente.txt': No such file or directory
@@ -361,7 +361,7 @@ a parar al archivo. Lee el archivo:
 cat resultados/errores.txt
 ```
 
-Salida real:
+Salida:
 
 ```text
 ls: cannot access 'datos/archivo-inexistente.txt': No such file or directory
@@ -391,7 +391,7 @@ comando termina con código `2`, porque el archivo no existe:
 grep "luz" datos/no-existe.txt > resultados/busqueda.txt 2> resultados/errores-busqueda.txt; echo $?
 ```
 
-Salida real:
+Salida:
 
 ```text
 2
@@ -403,7 +403,7 @@ Comprueba los dos archivos:
 cat resultados/busqueda.txt
 ```
 
-Salida real:
+Salida:
 
 ```text
 ```
@@ -412,7 +412,7 @@ Salida real:
 cat resultados/errores-busqueda.txt
 ```
 
-Salida real:
+Salida:
 
 ```text
 grep: datos/no-existe.txt: No such file or directory
@@ -442,7 +442,7 @@ Lee el archivo:
 cat resultados/errores.txt
 ```
 
-Salida real:
+Salida:
 
 ```text
 ls: cannot access 'datos/archivo-inexistente.txt': No such file or directory
@@ -476,7 +476,7 @@ Lee el archivo:
 cat resultados/todo.txt
 ```
 
-Salida real:
+Salida:
 
 ```text
 grep: datos/no-existe.txt: No such file or directory
@@ -492,7 +492,7 @@ revés, el error va a la terminal:
 grep "luz" datos/no-existe.txt 2>&1 > resultados/solo-salida.txt
 ```
 
-Salida real:
+Salida:
 
 ```text
 grep: datos/no-existe.txt: No such file or directory
@@ -507,7 +507,7 @@ archivo quedó vacío, como se comprueba leyéndolo:
 cat resultados/solo-salida.txt
 ```
 
-Salida real:
+Salida:
 
 ```text
 ```
@@ -528,7 +528,7 @@ Lee el archivo:
 cat resultados/todo2.txt
 ```
 
-Salida real:
+Salida:
 
 ```text
 grep: datos/no-existe.txt: No such file or directory
@@ -561,7 +561,7 @@ salida a `/dev/null` y se mira el código de salida. Busca
 grep "Scenedesmus" datos/muestras.txt > /dev/null 2>&1; echo $?
 ```
 
-Salida real:
+Salida:
 
 ```text
 1
@@ -582,7 +582,7 @@ existen:
 ls datos/*.csv 2> /dev/null; echo $?
 ```
 
-Salida real:
+Salida:
 
 ```text
 2
@@ -598,7 +598,7 @@ para la búsqueda en un archivo que no existe:
 grep "luz" datos/no-existe.txt 2> /dev/null; echo $?
 ```
 
-Salida real:
+Salida:
 
 ```text
 2
@@ -633,7 +633,7 @@ a la vez:
 grep "luz" datos/muestras.txt | tee resultados/luz.txt | wc -l
 ```
 
-Salida real:
+Salida:
 
 ```text
 3
@@ -647,7 +647,7 @@ Léelo para comprobarlo:
 cat resultados/luz.txt
 ```
 
-Salida real:
+Salida:
 
 ```text
 M02 luz_azul 0.68
@@ -675,7 +675,7 @@ archivo anterior:
 echo "M06 luz_roja 0.69" | tee -a resultados/luz.txt
 ```
 
-Salida real:
+Salida:
 
 ```text
 M06 luz_roja 0.69
@@ -688,7 +688,7 @@ Léelo:
 cat resultados/luz.txt
 ```
 
-Salida real:
+Salida:
 
 ```text
 M02 luz_azul 0.68
@@ -720,7 +720,7 @@ Cuenta las líneas de `muestras.txt` de las dos formas y compara:
 wc -l < datos/muestras.txt
 ```
 
-Salida real:
+Salida:
 
 ```text
 6
@@ -730,7 +730,7 @@ Salida real:
 wc -l datos/muestras.txt
 ```
 
-Salida real:
+Salida:
 
 ```text
 6 datos/muestras.txt
@@ -755,7 +755,7 @@ estándar:
 sort < datos/tratamientos.txt | uniq -c
 ```
 
-Salida real:
+Salida:
 
 ```text
       3 control
@@ -785,7 +785,7 @@ Lee el archivo resultante:
 cat resultados/muestras-todas.txt
 ```
 
-Salida real:
+Salida:
 
 ```text
 muestra tratamiento OD680
@@ -854,7 +854,7 @@ sección 3. Lee el registro:
 cat resultados/registro-analisis.txt
 ```
 
-Salida real:
+Salida:
 
 ```text
 Registro del analisis del experimento con Chlorella vulgaris
@@ -875,7 +875,7 @@ Lee el archivo de errores:
 cat resultados/errores-analisis.txt
 ```
 
-Salida real:
+Salida:
 
 ```text
 ls: cannot access 'datos/no-existe.txt': No such file or directory
@@ -896,7 +896,7 @@ hora actuales:
 date +%Y-%m-%d
 ```
 
-Salida real:
+Salida:
 
 ```text
 2026-11-15
@@ -944,7 +944,7 @@ se puede ejecutar dos veces seguidas: vuelve a generar sus
 archivos de ejemplo sin borrar el trabajo que tú hayas guardado
 dentro de `practica-batch`.
 
-Salida real de `bash redirecciones.sh`:
+Salida de `bash redirecciones.sh`:
 
 ```text
 Muestras con luz_azul, guardadas en resultados/luz-azul.txt:

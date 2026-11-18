@@ -65,7 +65,7 @@ cd ~/practica-batch
 ls
 ```
 
-Salida real:
+Salida:
 
 ```text
 datos
@@ -90,7 +90,7 @@ dentro de esta `dia1/`, aunque ninguna existía antes. Compruébalo:
 ls -R experimento-01
 ```
 
-Salida real:
+Salida:
 
 ```text
 experimento-01:
@@ -114,7 +114,7 @@ significa que algo salió mal):
 mkdir datos
 ```
 
-Salida real:
+Salida:
 
 ```text
 mkdir: cannot create directory 'datos': File exists
@@ -145,7 +145,7 @@ Comprueba que el archivo existe y que está vacío (tamaño 0):
 ls -l notas.txt
 ```
 
-Salida real:
+Salida:
 
 ```text
 -rw-rw---- 1 root root 0 Nov 10 05:28 notas.txt
@@ -181,7 +181,7 @@ cp datos/muestras.txt resultados/muestras-copia.txt
 ls resultados/
 ```
 
-Salida real:
+Salida:
 
 ```text
 muestras-copia.txt
@@ -195,7 +195,7 @@ cp datos/muestras.txt datos/muestras-respaldo.txt
 ls datos/
 ```
 
-Salida real:
+Salida:
 
 ```text
 lecturas.txt
@@ -216,7 +216,7 @@ ls
 ls datos-copia/
 ```
 
-Salida real:
+Salida:
 
 ```text
 datos
@@ -241,7 +241,7 @@ muestra un mensaje:
 cp datos resultados/copia-datos
 ```
 
-Salida real:
+Salida:
 
 ```text
 cp: -r not specified; omitting directory 'datos'
@@ -263,7 +263,7 @@ mv datos/muestras-respaldo.txt datos/muestras-viejo.txt
 ls datos/
 ```
 
-Salida real:
+Salida:
 
 ```text
 lecturas.txt
@@ -280,7 +280,7 @@ ls resultados/
 ls datos/
 ```
 
-Salida real:
+Salida:
 
 ```text
 datos-copia
@@ -310,7 +310,7 @@ mv datos/origen.txt resultados/destino.txt
 cat resultados/destino.txt
 ```
 
-Salida real:
+Salida:
 
 ```text
 nuevo
@@ -354,7 +354,7 @@ rm -r resultados/datos-copia
 ls resultados/
 ```
 
-Salida real:
+Salida:
 
 ```text
 muestras-copia.txt
@@ -387,7 +387,7 @@ printf 'n\n' | rm -i temporal.txt
 ls temporal.txt
 ```
 
-Salida real:
+Salida:
 
 ```text
 temporal.txt
@@ -401,7 +401,7 @@ printf 'y\n' | rm -i temporal.txt
 ls temporal.txt
 ```
 
-Salida real:
+Salida:
 
 ```text
 ls: cannot access 'temporal.txt': No such file or directory
@@ -458,7 +458,7 @@ Ahora muestra el contenido de cada archivo con `cat`:
 cat datos/muestras.txt
 ```
 
-Salida real:
+Salida:
 
 ```text
 muestra tratamiento OD680
@@ -473,7 +473,7 @@ M05 control 0.44
 cat datos/notas.txt
 ```
 
-Salida real:
+Salida:
 
 ```text
 Experimento con Chlorella vulgaris.
@@ -487,7 +487,7 @@ La densidad óptica se mide a 680 nm (OD680).
 cat datos/muestras.txt datos/notas.txt
 ```
 
-Salida real:
+Salida:
 
 ```text
 muestra tratamiento OD680
@@ -568,7 +568,7 @@ Sin opciones, `head` muestra las primeras 10 líneas y `tail` las
 head datos/lecturas.txt
 ```
 
-Salida real:
+Salida:
 
 ```text
 lectura hora OD680
@@ -591,7 +591,7 @@ líneas mostrar. Para ver las primeras 3 líneas:
 head -n 3 datos/lecturas.txt
 ```
 
-Salida real:
+Salida:
 
 ```text
 lectura hora OD680
@@ -605,7 +605,7 @@ Para ver las últimas 3 líneas:
 tail -n 3 datos/lecturas.txt
 ```
 
-Salida real:
+Salida:
 
 ```text
 8 15:00 0.72
@@ -619,7 +619,7 @@ Y `tail` sin opciones muestra las últimas 10 líneas:
 tail datos/lecturas.txt
 ```
 
-Salida real:
+Salida:
 
 ```text
 1 08:00 0.40
@@ -665,7 +665,7 @@ ejemplo sin borrar el trabajo que tú hayas guardado dentro de
 `practica-batch` (por ejemplo, la carpeta `experimento-01` de los
 ejercicios se conserva).
 
-Salida real de `bash organiza-archivos.sh`:
+Salida de `bash organiza-archivos.sh`:
 
 ```text
 Contenido de muestras.txt:

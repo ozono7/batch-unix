@@ -70,7 +70,7 @@ cd ~/practica-batch
 pwd
 ```
 
-Salida real:
+Salida:
 
 ```text
 /home/hatch/practica-batch
@@ -87,7 +87,7 @@ cd ~/practica-batch
 ls
 ```
 
-Salida real:
+Salida:
 
 ```text
 datos
@@ -103,7 +103,7 @@ Para ver el contenido de otra carpeta sin entrar en ella, se escribe su nombre d
 ls datos
 ```
 
-Salida real:
+Salida:
 
 ```text
 muestras.csv
@@ -118,7 +118,7 @@ La opción `-l` (de *long*, largo) muestra una línea por cada elemento, con det
 ls -l datos
 ```
 
-Salida real:
+Salida:
 
 ```text
 total 8
@@ -146,7 +146,7 @@ El listado de la propia carpeta de práctica muestra carpetas, y ahí el primer 
 ls -l
 ```
 
-Salida real:
+Salida:
 
 ```text
 total 0
@@ -165,7 +165,7 @@ La opción `-a` (de *all*, todo) muestra todos los elementos, incluidos los ocul
 ls -a
 ```
 
-Salida real:
+Salida:
 
 ```text
 .
@@ -186,7 +186,7 @@ La opción `-h` (de *human*, humano) muestra los tamaños en unidades fáciles d
 ls -lh datos
 ```
 
-Salida real:
+Salida:
 
 ```text
 total 8.0K
@@ -204,7 +204,7 @@ La opción `-t` (de *time*, tiempo) ordena el listado por fecha de modificación
 ls -t datos
 ```
 
-Salida real (después de modificar `notas.txt`, que quedó como el archivo más reciente):
+Salida (después de modificar `notas.txt`, que quedó como el archivo más reciente):
 
 ```text
 notas.txt
@@ -219,7 +219,7 @@ Las opciones se pueden combinar en un solo grupo de letras. El comando `ls -lah`
 ls -lah
 ```
 
-Salida real:
+Salida:
 
 ```text
 total 4.0K
@@ -243,7 +243,7 @@ cd datos
 pwd
 ```
 
-Salida real:
+Salida:
 
 ```text
 /home/hatch/practica-batch/datos
@@ -260,7 +260,7 @@ cd /home/hatch/practica-batch/datos
 pwd
 ```
 
-Salida real:
+Salida:
 
 ```text
 /home/hatch/practica-batch/datos
@@ -276,7 +276,7 @@ cd datos
 pwd
 ```
 
-Salida real:
+Salida:
 
 ```text
 /home/hatch/practica-batch/datos
@@ -295,7 +295,7 @@ cd ..
 pwd
 ```
 
-Salida real:
+Salida:
 
 ```text
 /home/hatch/practica-batch/datos
@@ -310,7 +310,7 @@ cd ../..
 pwd
 ```
 
-Salida real:
+Salida:
 
 ```text
 /home/hatch
@@ -327,7 +327,7 @@ cd -
 pwd
 ```
 
-Salida real:
+Salida:
 
 ```text
 /home/hatch/practica-batch
@@ -345,7 +345,7 @@ cd
 pwd
 ```
 
-Salida real:
+Salida:
 
 ```text
 /home/hatch
@@ -368,7 +368,7 @@ ls .
 ls ..
 ```
 
-Salida real:
+Salida:
 
 ```text
 muestras.csv
@@ -419,7 +419,7 @@ Para ejecutarlo, entra a la carpeta de la lección y escribe:
 bash explora.sh
 ```
 
-Salida real de la ejecución (en tu computadora, las rutas dirán tu nombre de usuario en lugar de `/home/hatch`):
+Salida de la ejecución (en tu computadora, las rutas dirán tu nombre de usuario en lugar de `/home/hatch`):
 
 ```text
 Estamos en:
